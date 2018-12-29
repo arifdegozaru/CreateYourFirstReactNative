@@ -1,16 +1,23 @@
 import React, { Component } from 'react'
 import {
-  View,
-  Text
+  ScrollView
 } from 'react-native'
 
+import colors from '../config/colors'
+import { me } from '../config/data'
+import { Header, Actions, Info } from '../components/UserDetails'
+import { PrimaryButton } from '../components/Buttons'
+
 class Me extends Component {
-  render() {
+  render () {
     return (
-      <View>
-        <Text>Me Screen</Text>
-      </View>
-    );
+      <ScrollView style={{ backgroundColor: colors.background }}>
+        <Header {...me} />
+        <PrimaryButton text="Edit Profile" onPress={() => null}/>
+        <Actions {...me} />
+        <Info {...me} />
+      </ScrollView>
+    )
   }
 }
 

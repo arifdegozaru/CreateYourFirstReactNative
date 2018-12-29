@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 import {
   ContactsStack,
@@ -6,9 +6,9 @@ import {
   MeStack,
   Tabs,
   Drawer
-} from './config/router';
+} from './config/router'
 
 const App = () => {
-  return <Drawer />;
-};
-export default App;
+  return <Tabs/>
+}
+export default App
